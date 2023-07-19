@@ -1,0 +1,15 @@
+:root {
+    --darkColor-background: #011212;
+    --orange-background: #ff8800;
+}
+
+body {
+    background-color: var(--darkColor-background);
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: var(--orange-background);
+    border-radius: 50px;
+}
