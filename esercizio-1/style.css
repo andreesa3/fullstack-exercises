@@ -21,7 +21,7 @@ img {
 .card-content {
   line-height: 130%;
   border-bottom: 1px solid lightgray;
-  padding: 16px 25px;
+  padding: 10px 25px;
 }
 .card-content-last {
   border-bottom: none;
