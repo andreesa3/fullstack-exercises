@@ -1,0 +1,78 @@
+@import url('./css/root.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  min-height: 100vh;
+}
+
+/* General */
+img {
+  max-width: 100%;
+}
+.container {
+  height: 100vh;
+}
+
+/* Logo */
+.logo {
+  max-width: 100px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0 3rem;
+  box-shadow: 0 0 10px var(--clr-background);
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  list-style: none;
+  padding: 0 1rem;
+  flex: 1;
+}
+.nav-links li {
+  width: 100%;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--clr-background);
+  padding: 0 .8rem .4rem;
+  position: relative;
+  transition: all .2s ease-out; 
+  cursor: pointer;
+}
+.nav-links li:hover {
+  padding-bottom: .6rem;
+  border-bottom: 3px solid var(--clr-hover);
+}
+.nav-links li:last-of-type {
+  margin-bottom: 2rem;
+}
+.nav-links li a {
+  font-size: 22px;
+  color: var(--clr-text);
+  transition: color .3s;
+  text-decoration: none;
+}
+.nav-links li a:hover {
+  color: var(--clr-hover);
+}
+
+/* Avatar */
+.avatar {
+  max-width: 50px;
+  margin: 0 auto;
+  margin-bottom: .5rem;
+}
