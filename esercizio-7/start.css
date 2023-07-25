@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: .5fr 1fr .5fr;
+  grid-template-areas:
+    'green-sec green-sec green-sec'
+    'yellow-sec red-sec blue-sec'
+    'orange-sec orange-sec blue-sec'
+  ;
+}
+
+#green {
+  grid-area: green-sec;
+}
+
+#orange {
+  grid-area: orange-sec;
+}
+
+#yellow {
+  grid-area: yellow-sec;
+}
+
+#red {
+  grid-area: red-sec;
+}
+
+#blue {
+  grid-area: blue-sec;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
