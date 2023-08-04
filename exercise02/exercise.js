@@ -1,5 +1,6 @@
 function nicknameMap(persons) {
   const newNicknameList = [];
+  /* Uso il for loop e non il map perché richiesto dalla consegna */
   for (let i of persons) {
     newNicknameList.push(`${i.name}-${i.age}`)
   }
