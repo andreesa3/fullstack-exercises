@@ -1,10 +1,8 @@
-const person = {
-  id: 1,
-  firstName: 'Mario',
-  lastName: 'Rossi',
-  age: 25
-};
+let num1 = 10;
+let num2 = 20;
+console.log('Before swap: ', num1, num2); // Before swap: 10 20
 
-const { id, firstName, lastName, age } = person;
+// Variable swapping
+[num1, num2] = [20, 10];
 
-console.log(id, firstName, lastName, age);
+console.log('After swap: ', num1, num2); // After swap: 20 10
