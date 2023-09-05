@@ -1,10 +1,10 @@
-const number = 15;
+const number = 5;
 
 const myPromise = new Promise((resolve, reject) => {
   if (number > 10) {
     resolve(number);
   } else {
-    reject(new Error(`ERROR: Il numero ${number} è minore di 10`))
+    reject(new Error(`Il numero ${number} è minore di 10`))
   }
 })
 
