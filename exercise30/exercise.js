@@ -11,10 +11,11 @@ class Person {
   }
 
   static fromJson(json) {
-    return new Person(JSON.parse(json));
+    const instance = JSON.parse(json);
+    return new Person(...Object.values(instance));
   }
 }
 
 const json = '{"id":1,"firstName":"Mario","lastName":"Rossi","age":25}';
 const developer = Person.fromJson(json);
-console.log(developer instanceof Person);
+console.log(developer);
