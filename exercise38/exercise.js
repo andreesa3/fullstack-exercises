@@ -1,12 +1,14 @@
 const isLogged = true;
 
-const isLoggedIn = new Promise((resolve, reject) => {
-  if (isLogged) {
-    resolve(Math.random());
-  } else {
-    reject(new Error('You are not logged in!'));
-  }
-})
+const isLoggedIn = () => {
+  return new Promise((resolve, reject) => {
+    if (isLogged) {
+      resolve(Math.random());
+    } else {
+      reject(new Error('You are not logged in!'));
+    }
+  })
+};
 
 const getUserData = (rand) => {
   return new Promise((resolve, reject) => {
@@ -16,9 +18,9 @@ const getUserData = (rand) => {
       reject(new Error('Num is smaller than 0.5'))
     }
   })
-}
+};
 
-isLoggedIn
-  .then((rand) => getUserData(rand))
+isLoggedIn  //ø
+  .then((rand) => getUserData(rand)) //∆
   .then((data) => console.log(data))
   .catch((err) => console.log(err))
