@@ -1,6 +1,6 @@
 const isLogged = true;
 
-const isLoggedIn = () => {
+const isLoggedIn = (bool) => {
   return new Promise((resolve, reject) => {
     if (isLogged) {
       resolve(Math.random());
@@ -20,7 +20,7 @@ const getUserData = (rand) => {
   })
 };
 
-isLoggedIn  //ø
-  .then((rand) => getUserData(rand)) //∆
+isLoggedIn(isLoggedIn)
+  .then((rand) => getUserData(rand))
   .then((data) => console.log(data))
   .catch((err) => console.log(err))
