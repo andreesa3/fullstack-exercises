@@ -2,7 +2,7 @@ const isLogged = true;
 
 const isLoggedIn = (bool) => {
   return new Promise((resolve, reject) => {
-    if (isLogged) {
+    if (bool) {
       resolve(Math.random());
     } else {
       reject(new Error('You are not logged in!'));
