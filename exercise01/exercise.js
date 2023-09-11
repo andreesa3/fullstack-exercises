@@ -10,14 +10,14 @@ function calculateSalary(role) {
   }
   switch (role) {
     case 'ceo':
-      return 2200;
+      return role + ' => ' + 2200;
     case 'manager':
     case 'cto':
-      return 1800;
+      return role + ' => ' + 1800;
     case 'developer':
-      return 1500;
+      return role + ' => ' + 1500;
     default:
-      return 1000;
+      return role + ' => ' + 1000;
   }
 }
 
