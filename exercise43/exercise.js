@@ -5,7 +5,11 @@ const user = {
 };
 
 const saveToStorage = (data) => {
-  localStorage.setItem('user', JSON.stringify(data));
+  try {
+    localStorage.setItem('user', JSON.stringify(data));
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 saveToStorage(user);
