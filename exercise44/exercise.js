@@ -12,5 +12,5 @@ const getData = (data) => {
   }
 }
 
-console.log(getData('user'));
+console.log('Dati utente: ', getData('user'));
 
