@@ -1,5 +1,5 @@
-function uncompletedNotes(notes) {
-  notes.forEach(note => {
+function uncompletedNotes(arr) {
+  arr.forEach(note => {
     const undoneTodos = note.todos.filter(todo => !todo.done);
     undoneTodos.forEach(todo => console.log(todo.name));
   });
