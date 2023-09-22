@@ -20,7 +20,10 @@
 </html>
 
 <script>
-  const surnameInput = document.querySelectorAll('.form-input')[1];
-  // const surnameInput = document.getElementsByClassName('form-input')[1];
-  console.log(surnameInput.value)
+  const surnameInput = document.querySelectorAll('.form-input');
+  surnameInput.forEach(input => {
+    if (input.type === 'text') {
+      console.log(input.value);
+    }
+  })
 </script>
